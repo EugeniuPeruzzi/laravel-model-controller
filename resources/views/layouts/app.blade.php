@@ -16,7 +16,9 @@
 </head>
 
 <body>
-
+    <header>
+        @include('partials.header')
+    </header>
     @yield('content')
 
 </body>
