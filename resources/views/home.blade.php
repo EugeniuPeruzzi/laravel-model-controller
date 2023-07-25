@@ -13,7 +13,7 @@
                     @foreach ($comics as $id => $comic)
                         <div class="card-content my-5">
                             <div class="img-container-2">
-                                <a href="######"><img src="{{ $comic->thumb }}" alt=""></a>
+                                <a href="{{ route('more', $id) }}"><img src="{{ $comic->thumb }}" alt=""></a>
                             </div>
                             <h6>{{ $comic->title }}</h6>
                         </div>
