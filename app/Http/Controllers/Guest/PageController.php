@@ -12,6 +12,8 @@ use App\Models\Comics;
 class PageController extends Controller
 {
     public function index(){
-        return view('home');
+        $comics = Comics::all();
+
+        return view('home', compact('comics'));
     }
 }

@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>hello</h1>
+    @foreach ($comics as $id => $comic)
+        <img src="{{ $comic->thumb }}" alt="">
+        {{ $comic->title }}
+        {{ $comic->description }}
+    @endforeach
 @endsection
